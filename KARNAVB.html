@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Anushka 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, lavender, pink);
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 0 15px #ff69b4;
+    }
+    h1 {
+      color: #ff4da6;
+    }
+    .btn {
+      display: inline-block;
+      background: #ff4da6;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      margin: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #e60073;
+    }
+    .story {
+      margin-top: 2rem;
+      display: none;
+      color: lavender;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Anniversary, Anushka 💕</h1>
+    <p>Click to begin our love story...</p>
+    <button class="btn" onclick="showStep('step1')">Begin 💌</button>
+
+    <div id="step1" class="story">
+      <p>It all started on the 7th of June... the day that changed everything.</p>
+      <p>The moment I saw you, I knew you were different. But I didn’t know you'd become my entire world.</p>
+      <img src="https://files.catbox.moe/7yq2mh.jpg" alt="Us together smiling" />
+      <button class="btn" onclick="showStep('step2')">Tell me more ❤️</button>
+    </div>
+
+    <div id="step2" class="story">
+      <p>Our first kiss… it still lives in my mind like a movie scene. That soft moment when time froze and nothing else mattered but *us*.</p>
+      <p>That day made me believe in magic. You, Anushka, *are* my magic.</p>
+      <img src="https://files.catbox.moe/5yz9hq.jpg" alt="Us kissing" />
+      <button class="btn" onclick="showStep('step3')">Wanna see how much I love you? 😘</button>
+    </div>
+
+    <div id="step3" class="story">
+      <p>Okay baby, choose what you want to hear next:</p>
+      <button class="btn" onclick="showStep('memories')">My Favorite Memory with You 💭</button>
+      <button class="btn" onclick="showStep('cutest')">The Cutest Thing You Do 🥺</button>
+    </div>
+
+    <div id="memories" class="story">
+      <p>My favorite memory? When we held hands for the first time, and it felt like our souls shook hands too. You didn’t just hold my hand, you held *me*.</p>
+      <img src="https://files.catbox.moe/6txthk.jpg" alt="Ghibli-style kiss moment" />
+      <button class="btn" onclick="showStep('final')">Continue 💗</button>
+    </div>
+
+    <div id="cutest" class="story">
+      <p>The cutest thing you do? That tiny pout when you’re mad and still try to act tough. My god, it's impossible not to fall for you all over again 😩💘</p>
+      <img src="https://files.catbox.moe/gc8f99.jpg" alt="Ghibli-style couple" />
+      <button class="btn" onclick="showStep('final')">Continue 💗</button>
+    </div>
+
+    <div id="final" class="story">
+      <p>I love you more than words could ever describe, more than stars in the sky or heartbeats in a lifetime.</p>
+      <p>You’re not just my girlfriend — you’re my best friend, my peace, and the most beautiful part of my life.</p>
+      <p>Happy Anniversary, Anushka. 💍💖</p>
+      <p>There’s so much more I want to show you... just say the word.</p>
+      <button class="btn" onclick="alert('A kiss is on the way 😘')">Blow Me a Kiss 💋</button>
+    </div>
+  </div>
+
+  <script>
+    function showStep(id) {
+      document.querySelectorAll('.story').forEach(el => el.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
